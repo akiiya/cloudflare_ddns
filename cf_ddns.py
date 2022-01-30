@@ -16,7 +16,7 @@ def get_configs():
     if isinstance(configs, dict):
         configs = [configs]
 
-    if isinstance(configs, list):
+    if not isinstance(configs, list):
         raise Exception('cf_config.json file error')
 
     return configs
